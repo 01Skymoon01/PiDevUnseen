@@ -1,0 +1,56 @@
+panier_homepage:
+    path:     /
+    defaults: { _controller: PanierBundle:Default:afficherProduits }
+afficherProduit:
+    path:     /afficherProduit
+    defaults: { _controller: PanierBundle:Default:afficherProduits }
+ajouterAuPanier:
+    path:     /ajouterAuPanier
+    defaults: { _controller: PanierBundle:Default:ajouterAuPanier }
+MyCart:
+    path:     /MyCart
+    defaults: { _controller: PanierBundle:Default:MyCart }
+ModifierQte:
+    path:     /ModifierQte
+    defaults: { _controller: PanierBundle:Default:ModifierQte }
+SupprimerItem:
+    path:     /SupprimerItem
+    defaults: { _controller: PanierBundle:Default:SupprimerItem }
+Valider:
+    path:     /Valider
+    defaults: { _controller: PanierBundle:Default:Valider }
+
+AfficherCommande:
+    path:     /AfficherCommande/
+    defaults: { _controller: PanierBundle:Default:AfficherCommande }
+
+ModifierEtatCommande:
+    path:     /ModifierEtatCommande/{id}/{etat}
+    defaults: { _controller: PanierBundle:Default:ModifierEtatCommande }
+
+AfficherDetailsCommande:
+    path:     /AfficherDetailsCommande/{id}
+    defaults: { _controller: PanierBundle:Default:AfficherDetailsCommande }
+
+
+SupprimerCommande:
+    path:     /SupprimerCommande/{id}
+    defaults: { _controller: PanierBundle:Default:SupprimerCommande }
+afficherCommandeDunUser:
+    path:     /afficherCommandeDunUser
+    defaults: { _controller: PanierBundle:Default:afficherCommandeDunUser }
+CountPanier:
+    path:     /CountPanier
+    defaults: { _controller: PanierBundle:Default:CountPanier }
+
+AllCommandeJson:
+    path:     /AllCommandeJson
+    defaults: { _controller: PanierBundle:Default:AllCommandeJson }
+
+AllDetailsCommandeJson:
+    path:     /AllDetailsCommandeJson/{id}
+    defaults: { _controller: PanierBundle:Default:AllDetailsCommandeJson }
+
+ReadAllCommandeJson:
+    path:     /ReadAllCommandeJson
+    defaults: { _controller: PanierBundle:Default:ReadAllCommandeJson }
